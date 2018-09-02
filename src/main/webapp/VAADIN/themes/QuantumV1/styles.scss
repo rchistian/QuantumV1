@@ -1,0 +1,11 @@
+@import "QuantumV1.scss";
+@import "addons.scss";
+
+// This file prefixes all rules with the theme name to avoid causing conflicts with other themes.
+// The actual styles should be defined in QuantumV1.scss
+
+.QuantumV1 {
+  @include addons;
+  @include QuantumV1;
+
+}

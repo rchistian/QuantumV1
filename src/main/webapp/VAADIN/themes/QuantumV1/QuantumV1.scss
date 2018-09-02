@@ -1,0 +1,1846 @@
+// If you edit this file you need to compile the theme. See README.md for details.
+
+// Global variable overrides. Must be declared before importing Valo.
+
+// Defines the plaintext font size, weight and family. Font size affects general component sizing.
+$v-font-size: 16px;
+//$v-font-weight: 300;
+//$v-font-family: "Open Sans", sans-serif;
+
+// Defines the border used by all components.
+//$v-border: 1px solid (v-shade 0.7);
+//$v-border-radius: 4px;
+
+// Affects the color of some component elements, e.g Button, Panel title, etc
+//$v-background-color: hsl(210, 0%, 98%);
+// Affects the color of content areas, e.g  Panel and Window content, TextField input etc
+//$v-app-background-color: $v-background-color;
+
+// Affects the visual appearance of all components
+//$v-gradient: v-linear 8%;
+//$v-bevel-depth: 30%;
+//$v-shadow-opacity: 5%;
+
+// Defines colors for indicating status (focus, success, failure)
+//$v-focus-color: valo-focus-color(); // Calculates a suitable color automatically
+//$v-friendly-color: #2c9720;
+//$v-error-indicator-color: #ed473b;
+
+// For more information, see: https://vaadin.com/book/-/page/themes.valo.html
+// Example variants can be copy/pasted from https://vaadin.com/wiki/-/wiki/Main/Valo+Examples
+
+@import "../valo/valo.scss";
+
+@mixin QuantumV1 {
+  @include valo;
+
+:root {
+    --ColorGolpeDeVista: #9FFFA1;
+    --vaadin-layout-spacing-xs: 1px;
+}
+
+
+.TextoFiled {
+	border: 2px solid #456879;
+    font-weight: bold;
+    text-align: center;
+    //background: Beige;
+    //background-color: Beige;
+}
+
+@keyframes exampleA {
+    from {color: red;}
+    to {color: yellow;}
+}
+
+.TextoBox {
+	border: 2px solid #456879;
+    //border-radius: 10px;
+    font-weight: bold;
+}
+
+.LabelTexto {
+    font-weight: bold;
+}
+
+.TextoPassword {
+	background-color : yellow;
+	border: 1px solid #008000;
+    font-size: 25px;
+    text-align: center; 
+}
+
+.boton3d {
+  background: black; //#00b7f8;
+  border-bottom: 5px solid #0045a6;
+  border-radius: 12px;
+  box-shadow: 6px 6px 6px #999;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-family: "Dancing Script"; 
+  font-size: 50px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px;
+  height: 32px;
+  margin: 80px auto;
+  padding: 20px 20px;
+  text-align: center;
+  transition: all 0.2s ease 0s;
+  width: 120px;
+
+  text-shadow: 0 0 10px #edf000,
+               0 0 20px #fff,
+               0 0 30px #fff,
+               0 0 40px #edf000,
+               0 0 70px #edf000,
+               0 0 80px #edf000,
+               0 0 100px #edf000,
+               0 0 150px #edf000;           
+}
+
+.boton3d:hover {
+  background: #0096f7;
+}
+
+  .estilotitulo {background: black;font-size: 18px}
+  .estilotitulofechahora {background: lightblue;font-size: 18px}
+
+
+//  ************************************ Menu Secundario **************************************
+  .botonobalado {
+     text-decoration: none;
+     //padding: 3px;
+     //padding-left: 10px;
+     //padding-right: 10px;
+     font-family: helvetica;
+     font-weight: 300;
+     font-size: 25px;
+     color: black;
+     background: lightblue;
+     border-radius: 15xp;
+     border: 3px solid blue;
+     border-top-right-radius: 16px;
+     border-top-left-radius: 16px;
+     border-bottom-right-radius: 16px;
+     border-bottom-left-radius: 16px;
+    
+     //text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+     vertical-align: middle;
+     text-align: center;
+     padding-bottom: 10px; 
+  }
+
+  .botonobalado:hover {
+    //opacity: 0.6;
+    text-decoration: none;
+    border: 3px solid black;
+    box-shadow: 0 17px 50px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+  }
+
+//  ************************************** Boton Login *************************************
+  .botonlogin {
+     text-decoration: none;
+     //padding: 3px;
+     //padding-left: 10px;
+     //padding-right: 10px;
+	 
+	 font: bold 25px Helvetica, Sans-Serif;
+     text-align: center;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: #3090C7;
+	 text-shadow: 0px 1px 2px #62C2F9;
+	 background: lightblue;
+     border-radius: 15xp;
+     border: 3px solid blue;
+     border-top-right-radius: 16px;
+     border-top-left-radius: 16px;
+     border-bottom-right-radius: 16px;
+     border-bottom-left-radius: 16px;
+     //box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+  }
+
+  .botonlogin:hover {
+    //opacity: 0.6;
+    text-decoration: none;
+    border: 3px solid black;
+    box-shadow: 0 17px 50px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+  }
+
+.loginLabel {
+  //font-family: "Dancing Script"; 
+  font-size: 20px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px;
+  height: 32px;
+  text-align: center;  
+}
+
+//  ***************************************** Menu Principal *********************************
+  .botonmenu {
+    display: block;
+    width: 250px;
+    height: 60px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+
+    background: #4682B4;
+    background: -moz-linear-gradient(top, #87CEEB 0%, #4682B4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87CEEB), color-stop(100%,#4682B4));
+ 
+    box-shadow: inset 0px 0px 6px #fff;
+    -webkit-box-shadow: inset 0px 0px 6px #fff;
+    border: 1px solid #62C2F9;
+    border-radius: 10px;
+ 
+    font: bold 25px Helvetica, Sans-Serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3090C7;
+    text-shadow: 0px 1px 2px #62C2F9;
+  }
+
+  .botonmenu:hover {
+    opacity: 0.6;
+    box-shadow: 0 17px 50px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+  }
+
+
+
+
+//   ********************************** Modulo Golpe de Vista ************************************
+
+//   **************** Fondo Windows Principal  **********************
+
+.LayoutWindowDetalle {
+    background-color: #E1FFBF;
+}
+
+//   ************************ Degradados  ***************************
+
+.LabelTituloAyuda {
+	//border: 2px solid #456879;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: red;
+    //text-shadow: 8px 8px 12px rgba(252, 252, 252, 1);
+    //background: #9FFFA1;
+    //background: -moz-linear-gradient(top,#9FFFA1  0%, White 100%);
+    //background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#9FFFA1));     
+}
+
+.DataDetalle02 {
+    //background: #9FFFA1;
+    //background: -moz-linear-gradient(top, White 0%, #9FFFA1 100%);
+    //background: -webkit-gradient(linear, left top, right top, color-stop(100%,White), color-stop(0%,#9FFFA1));
+    background: #7FFF82;
+    border: 1px solid #008000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.DataDetalle03 {
+    //background: #9FFFA1;
+    //background: -moz-linear-gradient(top, White 0%, #9FFFA1 100%);
+    //background: -webkit-gradient(linear, right top, left top, color-stop(100%,White), color-stop(0%,#9FFFA1));
+    
+    background: #7FFF82;
+    border: 1px solid #008000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.TituloFoto01{ 
+    background: #4682B4;
+    background: -moz-linear-gradient(top, #87CEEB 0%, #0000FF 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,#0000FF), color-stop(100%,#F0FFFF));
+    border: 1px solid #008000;
+}
+
+.GrupoCabezera02{ 
+    background: #9FFFA1;
+    background: -moz-linear-gradient(top, #9FFFA1 0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#9FFFA1));
+    border: 1px solid #008000;
+}
+
+.BotonDataDetalle01 {
+    background: #9FFFA1;
+    background: -moz-linear-gradient(top, #9FFFA1 0%, White  100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#9FFFA1));
+    border: 1px solid #008000;
+}
+
+.GrupoCabezera01{ 
+    background: #9FFFA1;
+    background: -moz-linear-gradient(top, #9FFFA1 0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#9FFFA1));
+    border: 1px solid #008000;
+}
+
+.DegradacionVerdeTopBottom{
+    background: #9FFFA1;
+    background: -moz-linear-gradient(top, #9FFFA1 0%, White 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,White), color-stop(100%,#9FFFA1));
+    border: 2px solid black;
+}
+
+.DegradacionAmarilloNotaBottomTop{
+    background: Beige;
+    background: -moz-linear-gradient(top, Beige 0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,Beige));
+    border: 2px solid black;
+}
+
+.WindowDetalle {
+    font-weight: bold;
+    color: black;
+}
+
+.v-window-WindowDetalle .v-window-outerheader {
+    background: black;
+}
+
+.v-window-WindowDetalle .v-window-header {
+     color: White;
+     text-align: center;
+     font-size: 20px;
+}
+
+.BotonProtocolo01{ 
+    color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center; 
+    border: 1px solid #008000; 
+    
+    background: #4682B4;
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #ADD8E6 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#ADD8E6));
+    
+}
+
+
+/************************************ Sin Degradado ***************************************/
+
+.LabelDetelleOK {
+    background-color: #9FFFA1;
+    font-size: 25px;
+    text-align: center;
+    border: 1px solid #008000;
+    font-weight: bold;
+    vertical-align: middle; 
+    color: black;
+}
+
+.LabelDetalle01 {
+    background-color: black;
+	border: 1px solid #008000;
+    font-size: 14px;
+    text-align: center;  
+    border-radius: 0xp;
+    color: White;  
+}
+
+.TextDetalle01 {
+ 	background-color: White;
+	border: 1px solid #008000;
+    font-size: 25px;
+    text-align: center;  
+    border-radius: 0xp;
+    color: black;    
+}
+
+.LabelDetalle02 {
+    background-color: DarkOrange;
+	border: 1px solid #008000;
+    font-size: 12px;
+    text-align: center;  
+    border-radius: 0xp;
+    color: black;  
+}
+
+.TextDetalle02 {
+	border: 1px solid #008000;
+    font-size: 12px;
+    text-align: center; 
+    border-radius: 0xp;
+    color: black;   
+}
+
+.DataDetalle01 {
+    background-color: DodgerBlue;
+    border: 1px solid #008000;
+}
+
+.DataDetalle {
+    background-color: DodgerBlue;
+    border: 1px solid #008000;
+}
+
+.BotonCabezeraNegro01 {
+    background-color: Black;
+    background: Black;
+    border: 1px solid #008000;
+}
+
+.BotonCabezeraGris01 {
+    background-color: Gray;
+    background: Gray;
+    border: 1px solid #008000;
+    -webkit-border-top-right-radius: 120px;
+    -moz-border-radius-topright: 120px;
+    border-top-right-radius: 120px;
+}
+
+.BotonCabezeraGris02 {
+    background-color: Gray;
+    background: Gray;
+    border: 1px solid #008000;
+    -webkit-border-top-left-radius: 120px;
+    -moz-border-radius-topleft: 120px;
+    border-top-left-radius: 120px;
+}
+
+.LayoutTituloDetalle01 {
+    background-color: black;
+    background: black;
+    border: 3px solid #FF0000;
+}
+
+.LayoutTituloDatos01 {
+    background-color: #5B5B5B;
+    background: #5B5B5B;
+    border: 1px solid #5B5B5B;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    color: White;
+}
+
+
+.TextoFiledTelefono {
+	border: 2px solid #456879;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background: #9FFFA1;
+    background: #9FFFA1;
+    background: -moz-linear-gradient(top, #9FFFA1 0%, White  100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#9FFFA1));
+    color: black;
+}
+
+
+.FechaField {
+	border: 2px solid #456879;
+    font-weight: bold;
+    text-align: center;
+    background: Blue;
+    background-color: Blue;
+}
+
+.LabelTituloRojo {
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    color: red;
+}
+
+.LabelTituloRojoI {
+    font-weight: bold;
+    text-align: left;
+    font-size: 14px;
+    color: red;
+}
+
+.LabelTituloRojoD {
+    font-weight: bold;
+    text-align: right;
+    font-size: 14px;
+    color: red;   
+}
+
+.LabelTituloNegro {
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+.LabelTituloNegroI {
+    font-weight: bold;
+    text-align: left;
+    font-size: 14px;
+    color: black;
+}
+
+.LabelTituloNegroD {
+    font-weight: bold;
+    text-align: right;
+    font-size: 14px;
+    color: black;
+}
+
+.FondoNegroLetrasBlancas {
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background: black;
+    background-color: black;
+}
+
+.SinFondoLetrasNegras {
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.LabelTextoNegroLetra22 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+}
+.LabelTextoRojo12 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: red;
+}
+.BotonNegroLetrasAmarillas {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: red;
+    background: black;
+    background-color: black;
+}
+
+.LayoutEspaciadoMinimo {
+   padding-top: 3px;
+}
+
+.LayoutEspaciadoMinimo > .v-spacing {
+    width: 3px;
+    height: 3px; 
+}
+
+
+.DatosReserva01{
+
+}
+
+.DatosReserva01 .v-spacing {
+       height: 21px;
+}
+
+/****************************************************** Menu Top **************************************************************/
+
+.BotonMenuTop01 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: red;
+    background: black;
+    background-color: black;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 1px solid black;
+}
+
+.BotonMenuTop02 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: red;
+    background: #9D9E9E;
+    background-color: #9D9E9E;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 1px solid black;
+}
+
+.BotonMenuCentro {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: red;
+    background: White;
+    background-color: White;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 2px solid red;
+}
+
+
+/************************************************* Golpe de Vista *********************************************/
+
+
+
+.GVLabelTexteBlancoFondoNegro {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    color: White;
+    background: black;
+    background-color: black;
+}
+
+.GVLabelTituloAyuda {
+	//border: 1px solid black;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: red;
+    //text-shadow: 8px 8px 12px rgba(252, 252, 252, 1);
+    background: #9FFFA1;
+    background: -moz-linear-gradient(top,#9FFFA1  0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#9FFFA1));     
+}
+
+.GVLabelTituloDatos01 {
+    background-color: black;
+    background: black;
+    border: 1px solid #5B5B5B;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    color: White;
+}
+
+.GVLabelTituloDatos02{ 
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: #9FFFA1;
+    background: -moz-linear-gradient(top, #9FFFA1 0%, White 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,White), color-stop(100%,#9FFFA1));
+    //border: 1px solid #008000;
+}
+
+.GVBotonPalyStop {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: red;
+    background: black;
+    background-color: black;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 0px solid #000000;
+}
+
+.GVLabelOK {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: #05C600;
+    background-color: #05C600;
+    border: 1px solid #008000;
+}
+
+.GVLabelTituloFecha {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: White;
+    background: Black;
+    background-color: Black;
+    border: 1px solid #008000;
+}
+
+.GVLabelFecha01 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.GVLabelFecha02 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: #808281;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.GVLabelFecha03 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: 	#B6B6B6;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.GVBotonComunicacion {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: 	Black;
+    background: White;
+    background-color: White;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 1px solid Black;    
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+.GVLabelTituloDatos01B {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: White;
+    background: #F87B21;
+    background-color: #F87B21;
+    border: 1px solid #008000;
+}
+
+.GVLabelDatos01 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 8 px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.GVLabelNivel01 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.GVLayoutDatos {
+    background: #79FD83;
+    background-color: #9CE99B;
+    border: 1px solid #008000;
+}
+
+.GVLayoutFoto {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.GVLabelTelefono {
+	border: 1px solid #008000;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    //text-shadow: 8px 8px 12px rgba(252, 252, 252, 1);
+    background: #9FFFA1;
+    background: -moz-linear-gradient(top,#9FFFA1  0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#9FFFA1));     
+}
+
+.GVLabelTituloDatoInfo {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+}
+
+.GVLabelDatoInfo {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: #FBFAE5;
+    background-color: #FBFAE5;
+    border: 1px solid #008000;
+}
+
+.GVBotonDatoInfo {
+	border: 1px solid #008000;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: #9FFFA1;
+    background: -moz-linear-gradient(top,#9FFFA1  0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#9FFFA1));  
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+}
+
+.GVLayoutLineaDicisoria {
+    background: red;
+    background-color: red;
+    border: 1px solid #008000;
+}
+
+.GVBotonMenuCentral01 {
+	border: 1px solid black;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: #9FFFA1;
+    background: -moz-linear-gradient(top,#9FFFA1  0%, White 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,White), color-stop(100%,#9FFFA1));     
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+.GVBotonMenuCentral02 {
+	border: 1px solid black;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: #FBFAE5;
+    background: -moz-linear-gradient(top,#FBFAE5  0%, White 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,White), color-stop(100%,#FBFAE5));     
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.GVBotonMenuFianl01 {
+	border: 0px solid #000000;
+	background: #000000;
+	background-color: #000000;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+.GVWindowDetalle {
+    font-weight: bold;
+    color: black;
+}
+
+.v-window-GVWindowDetalle .v-window-outerheader {
+    background: black;
+}
+
+.v-window-GVWindowDetalle .v-window-header {
+     color: White;
+     text-align: center;
+     font-size: 20px;
+}
+
+.GVLayoutWindowDetalle {
+    //background-color: #e6ffee;
+    background-color: red;
+}
+
+
+/************************************************* Reserva #f29340 *********************************************/
+
+.RSLabelTexteBlancoFondoNegro {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    color: White;
+    background: black;
+    background-color: black;
+}
+
+.RSLabelTituloAyuda {
+	//border: 1px solid black;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: red;
+    //text-shadow: 8px 8px 12px rgba(252, 252, 252, 1);
+    background: #f29340;
+    background: -moz-linear-gradient(top,#f29340  0%, White 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,White), color-stop(100%,#f29340));     
+}
+
+.RSLabelTituloDatos01 {
+    background-color: #5B5B5B;
+    background: #5B5B5B;
+    border: 1px solid #5B5B5B;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: White;
+}
+
+.RSLabelTituloDatos02{ 
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: #f29340;
+    background: -moz-linear-gradient(top, #f29340 0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#f29340));
+    //border: 1px solid #008000;
+}
+
+.RSBotonPalyStop {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: red;
+    background: black;
+    background-color: black;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 0px solid #000000;
+}
+
+.RSLabelOK {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.RSLabelTituloFecha {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: White;
+    background: Black;
+    background-color: Black;
+    border: 1px solid #008000;
+}
+
+.RSLabelFecha01 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.RSLabelFecha02 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: #808281;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.RSLabelFecha03 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: 	#B6B6B6;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.RSBotonComunicacion {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: 	Black;
+    background: White;
+    background-color: White;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 1px solid Black;    
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+.RSLabelTituloDatos01B {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: White;
+    background: #F87B21;
+    background-color: #F87B21;
+    border: 1px solid #008000;
+}
+
+.RSLabelDatos01 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.RSLabelNivel01 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.RSLayoutDatos {
+    background: #f29340;
+    background-color: #f29340;
+    border: 1px solid #008000;
+}
+
+.RSLayoutFoto {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.RSLabelTelefono {
+	border: 1px solid #008000;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    //text-shadow: 8px 8px 12px rgba(252, 252, 252, 1);
+    background: #f29340;
+    background: -moz-linear-gradient(top,#f29340  0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#f29340));     
+}
+
+.RSLabelTituloDatoInfo {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+}
+
+.RSLabelDatoInfo {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: #FBFAE5;
+    background-color: #FBFAE5;
+    border: 1px solid #008000;
+}
+
+.RSBotonDatoInfo {
+	border: 1px solid #008000;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: #f29340;
+    background: -moz-linear-gradient(top,#f29340  0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#f29340));  
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+}
+
+.RSLayoutLineaDicisoria {
+    background: red;
+    background-color: red;
+    border: 1px solid #008000;
+}
+
+.RSBotonMenuCentral01 {
+	border: 1px solid black;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: #f29340;
+    background: -moz-linear-gradient(top,#f29340  0%, White 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,White), color-stop(100%,#f29340));     
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+.RSBotonMenuCentral02 {
+	border: 1px solid black;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: #FBFAE5;
+    background: -moz-linear-gradient(top,#FBFAE5  0%, White 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,White), color-stop(100%,#FBFAE5));     
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+.RSBotonMenuFianl01 {
+	border: 0px solid #000000;
+	background: #000000;
+	background-color: #000000;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.RSWindowDetalle {
+    font-weight: bold;
+    color: black;
+}
+
+.v-window-RSWindowDetalle .v-window-outerheader {
+    background: #f29340;
+}
+
+.v-window-RSWindowDetalle .v-window-header {
+     color: White;
+     text-align: center;
+     font-size: 20px;
+}
+
+.RSLayoutWindowDetalle {
+    background-color: #fef1e7;
+}
+
+.RSDatoCentral01 {
+	border: 1px solid #008000;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    //color: White;
+    //background: #f29340;
+    //background-color: #f29340;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+}
+
+.RSDatoCentral02 {
+	border: 1px solid #008000;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: Red;
+    background: White;
+    background-color: White;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+}
+
+
+.RSDatoCentral03 {
+	border: 1px solid #008000;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: White;
+    background: #f29340;
+    background-color: #f29340;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+}
+
+.RSTituloDatoCental01 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: Blue;
+}
+
+.RSTituloDatoCental02 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: Black;
+}
+
+/************************************************* LLegada #CCCDCD *********************************************/
+
+.LLGLabelTexteBlancoFondoNegro {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    color: White;
+    background: black;
+    background-color: black;
+}
+
+.LLGLabelTituloAyuda {
+	//border: 1px solid black;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: red;
+    //text-shadow: 8px 8px 12px rgba(252, 252, 252, 1);
+    background: #CCCDCD;
+    background: -moz-linear-gradient(top,#CCCDCD  0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#CCCDCD));     
+}
+
+.LLGLabelTituloDatos01 {
+    background-color: #5B5B5B;
+    background: #5B5B5B;
+    border: 1px solid #5B5B5B;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: White;
+}
+
+.LLGLabelTituloDatos02{ 
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: #CCCDCD;
+    background: -moz-linear-gradient(top, #CCCDCD 0%, White 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,White), color-stop(100%,#CCCDCD));
+    //border: 1px solid #008000;
+}
+
+.LLGBotonPalyStop {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: red;
+    background: black;
+    background-color: black;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 0px solid #000000;
+}
+
+.LLGLabelOK {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.LLGLabelTituloFecha {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: White;
+    background: Black;
+    background-color: Black;
+    border: 1px solid #008000;
+}
+
+.LLGLabelFecha01 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.LLGLabelFecha02 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: #808281;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.LLGLabelFecha03 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: 	#B6B6B6;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.LLGBotonComunicacion {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: 	Black;
+    background: White;
+    background-color: White;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 1px solid Black;    
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+.LLGLabelTituloDatos01B {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: White;
+    background: #F87B21;
+    background-color: #F87B21;
+    border: 1px solid #008000;
+}
+
+.LLGLabelDatos01 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.LLGLabelNivel01 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.LLGLayoutDatos {
+    background: #CCCDCD;
+    background-color: #CCCDCD;
+    border: 1px solid #008000;
+}
+
+.LLGLayoutFoto {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.LLGLabelTelefono {
+	border: 1px solid #008000;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    //text-shadow: 8px 8px 12px rgba(252, 252, 252, 1);
+    background: #CCCDCD;
+    background: -moz-linear-gradient(top,#CCCDCD  0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#CCCDCD));     
+}
+
+.LLGLabelTituloDatoInfo {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+}
+
+.LLGLabelDatoInfo {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: #FBFAE5;
+    background-color: #FBFAE5;
+    border: 1px solid #008000;
+}
+
+.LLGBotonDatoInfo {
+	border: 1px solid #008000;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: #CCCDCD;
+    background: -moz-linear-gradient(top,#CCCDCD  0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#CCCDCD));  
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+}
+
+.LLGLayoutLineaDicisoria {
+    background: red;
+    background-color: red;
+    border: 1px solid #008000;
+}
+
+.LLGBotonMenuCentral01 {
+	border: 1px solid black;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: #CCCDCD;
+    background: -moz-linear-gradient(top,#CCCDCD  0%, White 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,White), color-stop(100%,#CCCDCD));     
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+.LLGBotonMenuCentral02 {
+	border: 1px solid black;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: #FBFAE5;
+    background: -moz-linear-gradient(top,#FBFAE5  0%, White 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,White), color-stop(100%,#FBFAE5));     
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.LLGBotonMenuFianl01 {
+	border: 0px solid #000000;
+	background: #000000;
+	background-color: #000000;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.LLGWindowDetalle {
+    font-weight: bold;
+    color: black;
+}
+
+.v-window-LLGWindowDetalle .v-window-outerheader {
+    background: #CCCDCD;
+}
+
+.v-window-LLGWindowDetalle .v-window-header {
+     color: White;
+     text-align: center;
+     font-size: 20px;
+}
+
+.LLGLayoutWindowDetalle {
+    background-color: #EBECEC;
+}
+
+
+/************************************************* Confirmacion #334bff *********************************************/
+
+.CFLabelTexteBlancoFondoNegro {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    color: White;
+    background: black;
+    background-color: black;
+}
+
+.CFLabelTituloAyuda {
+	//border: 1px solid black;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: red;
+    //text-shadow: 8px 8px 12px rgba(252, 252, 252, 1);
+    background: #334bff;
+    background: -moz-linear-gradient(top,#334bff  0%, White 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,White), color-stop(100%,#334bff));     
+}
+
+.CFLabelTituloDatos01 {
+    background-color: #5B5B5B;
+    background: #5B5B5B;
+    border: 1px solid #5B5B5B;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: White;
+}
+
+.CFLabelTituloDatos02{ 
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: #334bff;
+    background: -moz-linear-gradient(top, #334bff 0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#334bff));
+    //border: 1px solid #008000;
+}
+
+.CFBotonPalyStop {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: red;
+    background: black;
+    background-color: black;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 0px solid #000000;
+}
+
+.CFLabelOK {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.CFLabelTituloFecha {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: White;
+    background: Black;
+    background-color: Black;
+    border: 1px solid #008000;
+}
+
+.CFLabelFecha01 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.CFLabelFecha02 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: #808281;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.CFLabelFecha03 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: 	#B6B6B6;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.CFBotonComunicacion {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: 	Black;
+    background: White;
+    background-color: White;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 1px solid Black;    
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+.CFLabelTituloDatos01B {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: White;
+    background: #F87B21;
+    background-color: #F87B21;
+    border: 1px solid #008000;
+}
+
+.CFLabelDatos01 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.CFLabelNivel01 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.CFLayoutDatos {
+    background: #334bff;
+    background-color: #334bff;
+    border: 1px solid #008000;
+}
+
+.CFLayoutFoto {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.CFLabelTelefono {
+	border: 1px solid #008000;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    //text-shadow: 8px 8px 12px rgba(252, 252, 252, 1);
+    background: #334bff;
+    background: -moz-linear-gradient(top,#334bff  0%, White 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,White), color-stop(100%,#334bff));     
+}
+
+.CFLabelTituloDatoInfo {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+}
+
+.CFLabelDatoInfo {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: #FBFAE5;
+    background-color: #FBFAE5;
+    border: 1px solid #008000;
+}
+
+.CFBotonDatoInfo {
+	border: 1px solid #008000;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: #334bff;
+    background: -moz-linear-gradient(top,#334bff  0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#334bff));  
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+}
+
+.CFLayoutLineaDicisoria {
+    background: red;
+    background-color: red;
+    border: 1px solid #008000;
+}
+
+.CFBotonMenuCentral01 {
+	border: 1px solid black;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: #334bff;
+    background: -moz-linear-gradient(top,#334bff  0%, White 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,White), color-stop(100%,#334bff));     
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+.CFBotonMenuCentral02 {
+	border: 1px solid black;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: #FBFAE5;
+    background: -moz-linear-gradient(top,#FBFAE5  0%, White 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,White), color-stop(100%,#FBFAE5));     
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.CFBotonMenuFianl01 {
+	border: 0px solid #000000;
+	background: #000000;
+	background-color: #000000;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.CFWindowDetalle {
+    font-weight: bold;
+    color: black;
+}
+
+.v-window-CFWindowDetalle .v-window-outerheader {
+    background: #334bff;
+}
+
+.v-window-CFWindowDetalle .v-window-header {
+     color: White;
+     text-align: center;
+     font-size: 20px;
+}
+
+.CFLayoutWindowDetalle {
+    background-color: #F1FEFF;
+}
+
+}
