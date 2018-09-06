@@ -220,8 +220,8 @@ public class ByosVisorImegenes extends ByosVerticalLayout implements PropertyCha
 	  }else{
 		 ImagenSeleccionada=-1;
 	  }
-	  //System.out.println("Cantidad de Imagenes Cargadas: " + f );
 	  
+	  System.out.println("Directorio Local: " + basepath );
 	  Contenido.removeComponent(viewer);
 	  removeComponent(viewer);
 	  viewer = new ImageViewer();
@@ -263,6 +263,7 @@ public class ByosVisorImegenes extends ByosVerticalLayout implements PropertyCha
    public void procesoZoomImagen() {
        ByosVisorZoom ByosVisorZoom01 = new ByosVisorZoom(); 
        ByosVisorZoom01.ActivarZoom(DirUrl, DirFile, "",""); 
+       
        //init(DirUrl, DirFile, Estado);
    }
    
