@@ -1557,17 +1557,6 @@ div.v-layout.v-horizontal.v-widget {
 	vertical-align: top;
 }
 
-.QuantumV1 {
-	@keyframes exampleA {
-		from {
-		color: red;
-	}
-		to {
-		color: yellow;
-	}
-	}
-}
-
 .QuantumV1 .scale-image {
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -13255,11 +13244,6 @@ div.v-layout.v-horizontal.v-widget {
 	overflow: hidden;
 }
 
-.QuantumV1 :root {
-	--ColorGolpeDeVista: #9FFFA1;
-	--vaadin-layout-spacing-xs: 1px;
-}
-
 .QuantumV1 .TextoFiled {
 	border: 2px solid #456879;
 	font-weight: bold;
@@ -14026,7 +14010,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .QuantumV1 .GVLayoutWindowDetalle {
-	background-color: #e6ffee;
+	background-color: red;
 }
 
 .QuantumV1 .RSLabelTexteBlancoFondoNegro {

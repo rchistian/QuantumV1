@@ -34,11 +34,6 @@ $v-font-size: 16px;
 @mixin QuantumV1 {
   @include valo;
 
-:root {
-    --ColorGolpeDeVista: #9FFFA1;
-    --vaadin-layout-spacing-xs: 1px;
-}
-
 
 .TextoFiled {
 	border: 2px solid #456879;
@@ -46,11 +41,6 @@ $v-font-size: 16px;
     text-align: center;
     //background: Beige;
     //background-color: Beige;
-}
-
-@keyframes exampleA {
-    from {color: red;}
-    to {color: yellow;}
 }
 
 .TextoBox {
@@ -883,8 +873,8 @@ $v-font-size: 16px;
 }
 
 .GVLayoutWindowDetalle {
-    background-color: #e6ffee;
-    //background-color: red;
+    //background-color: #e6ffee;
+    background-color: red;
 }
 
 
